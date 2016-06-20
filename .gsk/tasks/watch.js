@@ -10,7 +10,7 @@ var ENV  = require('../tools/env');
 // WATCH CONFIGURATION
 // ----------------------------------------------------------------------------
 var W = [
-  {tasks: ['html'],   files: [].concat(
+  {tasks: ['html', 'svg:symbols'],   files: [].concat(
     path.join(ENV.html['src-dir'],  '**', '*'),
     path.join(ENV.html['data-dir'], '**', '*')
   )},

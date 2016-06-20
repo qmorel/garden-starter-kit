@@ -16,4 +16,27 @@
 {# ------------------------------------------------------------------------- #}
 {% block main %}
   <p>{{ description }}</p>
+
+  <!-- SVG example -->
+  <style>
+    .icon {
+      width: 125px;
+      height: 125px;
+      background: #eee;
+    }
+
+    body {
+      padding: 20px;
+    }
+  </style>
+
+  <svg class="icon">
+    <use xlink:href="#fish" />
+  </svg>
+
+  <svg class="icon">
+    <use xlink:href="#beaker" />
+  </svg>
+  <!-- end: SVG example -->
+
 {% endblock %}
