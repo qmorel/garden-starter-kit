@@ -45,15 +45,15 @@
     <tr>
       <th scope="row">
         <strong><a href="{{file.directory}}/{{file.basename}}.html">{{#if data.title }}{{ data.title }}{{ else }}{{ file.basename }}.html{{/if}}</a></strong><br>
-        <small>{{ data.description }}</small>
+        <small>{{{ data.description }}}</small>
       </th>
-      <td>{{ data.valid.css }}</td>
-      <td>{{ data.valid.js }}</td>
-      <td>{{ data.valid.chrome }}</td>
-      <td>{{ data.valid.firefox }}</td>
-      <td>{{ data.valid.ie }}</td>
-      <td>{{ data.valid.safari }}</td>
-      <td>{{ data.notes }}</td>
+      <td>{{{ data.valid.css }}}</td>
+      <td>{{{ data.valid.js }}}</td>
+      <td>{{{ data.valid.chrome }}}</td>
+      <td>{{{ data.valid.firefox }}}</td>
+      <td>{{{ data.valid.ie }}}</td>
+      <td>{{{ data.valid.safari }}}</td>
+      <td>{{{ data.notes }}}</td>
     </tr>
 
     {{#if islast}}
