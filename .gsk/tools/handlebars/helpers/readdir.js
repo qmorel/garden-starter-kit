@@ -1,4 +1,4 @@
-// readdir(dir)
+// {{#readdir dir }}{{/readdir}}
 // --------------------------------------------------------------------------
 // Lit un dossier et renvoie les informations sur les fichiers
 //
@@ -19,7 +19,7 @@ var glob = require('glob');
 var ENV  = require('../../env.js').html;
 
 
-module.exports.register = function(Handlebars) {
+module.exports.register = function (Handlebars) {
   'use strict';
 
   Handlebars.registerHelper('readdir', function (dir, block) {

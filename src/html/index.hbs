@@ -6,19 +6,18 @@
 {{#> layouts_documentation}}
 
   {{#readdir './pages' }}
-    {{!-- TODO: data from json --}}
-    {{! set data = json(file.directory ~ '/' ~ file.basename ~ '.json') }}
+    {{json 'data' (concat file.directory '/' file.basename '.json') }}
 
     {{#if newdir}}
       <h2 class="ca__title1">
         {{ file.directory }}
         {{!-- TODO: title
-        {% if     dir == './pages'          %}
+        {% if     file.directory == './pages'          %}
           Pages principales
-        {% elseif dir == './pages/subpages' %}
+        {% elseif file.directory == './pages/subpages' %}
           Pages secondaires
         {% else %}
-          {{ dir }}
+          {{ file.directory }}
         {% endif %}
         --}}
       </h2>
@@ -45,7 +44,7 @@
 
     <tr>
       <th scope="row">
-        <strong><a href="{{file.directory}}/{{file.basename}}.html">{{! if data.title }}{{ data.title }}{{! else }}{{ file.basename }}.html{{! endif }}</a></strong><br>
+        <strong><a href="{{file.directory}}/{{file.basename}}.html">{{#if data.title }}{{ data.title }}{{ else }}{{ file.basename }}.html{{/if}}</a></strong><br>
         <small>{{ data.description }}</small>
       </th>
       <td>{{ data.valid.css }}</td>
