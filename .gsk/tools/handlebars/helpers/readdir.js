@@ -5,7 +5,7 @@
 // Pour le paramètre `dir`, le dossier courrant `./` est le dossier source
 // des gabarits Twig: `src/html` par defaut.
 //
-// Les informations retournées sont un tableau d'objet de la forme:
+// Les informations retournées sont un tableau d'objets de la forme:
 // {
 //   path      : le chemin complet du fichier à partir de ./
 //   directory : le chemin complet du repertoir contenant le fichier à partir de ./

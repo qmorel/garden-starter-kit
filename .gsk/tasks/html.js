@@ -17,7 +17,7 @@ var ENV      = require('../tools/env').html;
 var pipeline = require('../pipe/html/' + ENV.engine + '.js');
 
 // On ne va compiler que les fichiers dont le nom ne commence pas par un _
-// Ni ceux qui ne sont pas au format de l'engine choisis
+// Ni ceux qui ne sont pas au format de l'engine choisi
 var ext = {
   handlebars: '*.hbs',
   twig: '*.twig'
