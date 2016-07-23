@@ -1,3 +1,6 @@
+# Autorise l'import des partial Sass dans les sous dossiers /*/**
+require "sass-globbing"
+
 # Nombre de décimal après la virgule, utile pour la précision des em
 Sass::Script::Number.precision = 8
 
